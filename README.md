@@ -1,7 +1,8 @@
-# Getting Started with Create React App
+The solution was divided into two different versions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+One version is the JavaScript solution.
+The other one, I used React and states to create that version
+Finally the intention was to connect it to AWS Amplify, however AWS needs 24 hours to confirm my user. This may be added before review
 ## Available Scripts
 
 In the project directory, you can run:
