@@ -2,10 +2,6 @@ const diffInDistance = (a, b) =>
   Math.sqrt(Math.pow(a[0], 2) + Math.pow(b[0], 2));
 
 export function getDistance(networkCord, deviceCord) {
-  //this is the function that will be called in the main function.
-  //this will get the distance between the device and the network station.
-  // it will return the distance to the network.
-  //the distance is calculated by network point x network point -y ^ 2 + device point x -y ^ 2
 
   var distance = Math.sqrt(
     Math.pow(networkCord[0] - deviceCord[0], 2) +
@@ -63,26 +59,8 @@ export function absoluteFastestRoute(fastRoute) {
 
   const fastestData = fastest[0];
   if (fastest.length > 0) {
-    // return (
-    //   <div>
-    //     <h1>The fastest route is:</h1>
-    //     <h2>
-    //       The fastest route for device: [{fastestData.device.coordinates[0]},
-    //       {fastestData.device.coordinates[1]}] is network: [
-    //       {fastestData.network.coordinates[0]},
-    //       {fastestData.network.coordinates[1]}] with the speed of{" "}
-    //       {fastestData.network.speed}mb/s
-    //     </h2>
-    //   </div>
-    // );
-    // console.log(
-    //   `... And the absolute fastest speed is that for device: [${fastestData.device.coordinates[0]},${fastestData.device.coordinates[1]}] is network: [${fastestData.network.coordinates[0]}, ${fastestData.network.coordinates[1]}] with the speed of ${fastestData.network.speed}mb/s`
-    // );
     return `... And the absolute fastest speed is that for device: [${fastestData.device.coordinates[0]},${fastestData.device.coordinates[1]}] is network: [${fastestData.network.coordinates[0]}, ${fastestData.network.coordinates[1]}] with the speed of ${fastestData.network.speed}mb/s`;
   } else {
-    // console.log(
-    //   `No route found for device: [${fastestData.device.coordinates[0]},${fastestData.device.coordinates[1]}]`
-    // );
     return `No route found for device: [${fastestData.device.coordinates[0]},${fastestData.device.coordinates[1]}]`;
   }
 }
