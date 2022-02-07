@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MainCode from "./MainCode";
 import { getFastRoutes, absoluteFastestRoute, getDistance } from "./utils";
 //Rather than having the data stored as a global variable, I have it stored in a state.
 //This is because I want to be able to change the data and re-render the component.
