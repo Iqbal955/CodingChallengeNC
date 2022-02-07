@@ -1,5 +1,5 @@
 
-//Getting the devices and the networks. We will use the coordinates to calculate the distance.
+//Getting the devices and the networks. We will use the coordinates to calculate the distance..
 
 var devicePoints = [
   { coordinates: [0, 0] },
